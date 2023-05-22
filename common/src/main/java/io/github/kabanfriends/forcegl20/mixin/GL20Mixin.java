@@ -1,7 +1,7 @@
 package io.github.kabanfriends.forcegl20.mixin;
 
+import com.mojang.blaze3d.platform.Window;
 import io.github.kabanfriends.forcegl20.ForceGL20;
-import net.minecraft.client.util.Window;
 import org.lwjgl.glfw.GLFW;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -20,7 +20,7 @@ public class GL20Mixin {
                 hintName = ForceGL20.GLFW_HINT_NAMES.get(hint);
             }
 
-            value = ForceGL20.GLFW_OVERRIDE_VALUES.get(hint);
+            value = ForceGL20.GLFW_OVERRIDE_VALUES.get(hint).getValue();
             ForceGL20.LOGGER.info("Overriding " + hintName + ": " + original + " -> " + (value == -2 ? "None" : value));
             if (value == -2) {
                 return;

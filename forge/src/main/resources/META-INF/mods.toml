@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[37,)"
+#issueTrackerURL = ""
+license = "LGPL-3.0"
+
+[[mods]]
+modId = "forcegl20"
+version = "${version}"
+displayName = "ForceGL20"
+authors = "KabanFriends"
+description = "Forces the game to use OpenGL 2.0!"
+logoFile = "assets/forcegl20/icon.png"
+
+[[dependencies.forcegl20]]
+modId = "forge"
+mandatory = true
+versionRange = "[37,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.forcegl20]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.17.1,)"
+ordering = "NONE"
+side = "CLIENT"

@@ -1,12 +1,12 @@
 {
   "required": true,
-  "minVersion": "0.8",
   "package": "io.github.kabanfriends.forcegl20.mixin",
-  "compatibilityLevel": "JAVA_17",
-  "mixins": [
-  ],
+  "compatibilityLevel": "JAVA_16",
+  "minVersion": "0.8",
   "client": [
     "GL20Mixin"
+  ],
+  "mixins": [
   ],
   "injectors": {
     "defaultRequire": 1
