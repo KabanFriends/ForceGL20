@@ -1,5 +1,5 @@
 # ForceGL20
-A Minecraft mod for [Fabric](https://fabricmc.net/) that forces the game to use OpenGL 2.0.
+A Minecraft mod for [Fabric](https://fabricmc.net/) & [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/) that forces the game to use OpenGL 2.0.
 
 ## Why?
 Since Minecraft 1.17, Mojang changed the required OpenGL version to 3.2.  
