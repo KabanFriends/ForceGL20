@@ -37,7 +37,7 @@ public class ForceGL20 {
         overrideBuilder.put(GLFW.GLFW_CONTEXT_VERSION_MAJOR, new HintOverride(OverrideType.SET_VALUE, 2));
         overrideBuilder.put(GLFW.GLFW_CONTEXT_VERSION_MINOR, new HintOverride(OverrideType.SET_VALUE, 0));
         overrideBuilder.put(GLFW.GLFW_OPENGL_PROFILE, new HintOverride(OverrideType.SET_VALUE, 0));
-        overrideBuilder.put(GLFW.GLFW_OPENGL_FORWARD_COMPAT, new HintOverride(OverrideType.DO_NOT_SET));
+        overrideBuilder.put(GLFW.GLFW_OPENGL_FORWARD_COMPAT, HintOverride.DO_NOT_SET);
 
         GLFW_OVERRIDE_VALUES = overrideBuilder.build();
 
